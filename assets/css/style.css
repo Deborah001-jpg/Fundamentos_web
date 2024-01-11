@@ -1,5 +1,5 @@
 /* Estilos da pagina Index.html */
-.center{
+.center {
     text-align: center;
 }
 
@@ -8,13 +8,33 @@
     flex-flow: row wrap;
     justify-content: center;
     background-color: #f7b475ec;
-  }
+    align-items: center;
+}
 
-  .container > div {
+.container>div {
     width: 10px;
     margin: 10px;
     text-align: center;
     line-height: 40px;
     font-size: 20px;
-  }
+
+}
+
+#menu li {
+    display: inline;
+    margin: 60px;
+
+}
+
+#menu li a {
+    text-decoration: none;
+    color: black;
+    font-size:medium;
+}
+
+#menu li a:hover{
+    color: blueviolet;
+}
+
+
 /* Estilos da pagina contato.html */

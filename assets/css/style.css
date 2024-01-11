@@ -1,0 +1,20 @@
+/* Estilos da pagina Index.html */
+.center{
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    background-color: #f7b475ec;
+  }
+
+  .container > div {
+    width: 10px;
+    margin: 10px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+  }
+/* Estilos da pagina contato.html */

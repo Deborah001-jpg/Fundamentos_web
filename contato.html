@@ -24,26 +24,31 @@
 
     <form>
         <label for="nome"> Nome: </label><br>
-        <input type="text" id="nome">
-        <br>
+        <input type="text" id="nome" onkeyup="validaNome()">
+        <div id="txtNome"></div>
         <br>
         <label for="email"> Email: </label><br>
-        <input type="email" id="email">
-        <br>
+        <input type="email" id="email" onkeyup="validaEmail()">
+        <div id="txtEmail"></div>
         <br>
         <label for="assunto"> Assunto: </label><br>
-        <textarea name="assunto" id="assunto" cols="60" rows="5"></textarea>
+        <textarea name="assunto" id="assunto" cols="60" rows="5" onkeyup="validaAssunto()"></textarea>
+        <div id="txtAssunto"></div>
         <br>
         <br>
-        <button> Enviar </button>
+        <button onclick="enviar()"> Enviar </button>
     </form>
 
     <h2> Meu lugar favorito </h2>
     <p> Ilha Bela - Litoral Norte - São Paulo </p>
     <p> Praia do Curral </p>
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3648.654071465517!2d-45.43498367542565!3d-23.866414622868785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d29038596226c1%3A0x77fff0d9a3be9425!2sPraia%20do%20Curral!5e0!3m2!1spt-BR!2sbr!4v1704983528570!5m2!1spt-BR!2sbr
-    " width="400" height="250" style="border:0;" allowfullscreen=""
-     loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    " width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade" onmousemove = "mapaZoom()" onmouseout="mapaNormal()"
+        id = "mapa"></iframe>
+
+    <script src="assets/js/script.js"></script>
+
 
 </body>
 
